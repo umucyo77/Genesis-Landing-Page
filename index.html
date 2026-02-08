@@ -1,66 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genesis | AI Agents Landing Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Genesis template</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .mesh-bg {
+            background-color: #000;
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(76, 29, 149, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(194, 65, 12, 0.1) 0px, transparent 50%),
+                radial-gradient(at 50% 50%, rgba(194, 65, 12, 0.05) 0px, transparent 50%);
+        }
+    </style>
 </head>
 <body class="bg-black text-white selection:bg-orange-500/30 overflow-x-hidden">
 
-    <header class="fixed top:0 w-full z-50 border-b border-white/5 bg-black/60 backdrop-blur-xl">
+    <header class="fixed top-0 w-full z-50 border-b border-white/5 bg-black/60 backdrop-blur-xl">
         <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex items-center gap-2">
-                <!-- <div class="bg-orange-600 p-1.5 rounded-lg">
-                    svg
-
-                </div> -->
-
-                <span class="text-xl font-bold tracking-light">Genesis</span>
-
+                <div class="bg-orange-600 p-1.5 rounded-lg">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight">Genesis</span>
             </div>
-
             <ul class="hidden lg:flex space-x-8 text-sm font-medium text-gray-400">
-                <li><a href="#" class="hover:text-white transition"></a>Home</li>
-                <li><a href="#" class="hover:text-white transition"></a>Agents</li>
-                <li><a href="#" class="hover:text-white transition"></a>Use Cases</li>
-                <li><a href="#" class="hover:text-white transition"></a>Pricing</li>
-                <li><a href="#" class="hover:text-white transition"></a>Docs</li>
-                
+                <li><a href="#" class="hover:text-white transition">Home</a></li>
+                <li><a href="#" class="hover:text-white transition">Agents</a></li>
+                <li><a href="#" class="hover:text-white transition">Use Cases</a></li>
+                <li><a href="#" class="hover:text-white transition">Pricing</a></li>
+                <li><a href="#" class="hover:text-white transition">Docs</a></li>
             </ul>
-
-            <button class="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full text-sm font-semibold transition border border-white">Sign Up</button>
-
+            <button class="bg-white/10 hover:bg-white/20 px-6 py-2 rounded-full text-sm font-semibold transition border border-white/10">Sign Up</button>
         </nav>
-
     </header>
 
     <main class="mesh-bg">
         <section class="relative pt-32 pb-20 md:pt-56 md:pb-40 px-6">
-            <div class="container mx-auto text-center relatave z-10">
+            <div class="container mx-auto text-center relative z-10">
                 <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-4 py-1.5 rounded-full text-xs md:text-sm mb-8">
-                    <span class="text-gray-400">Smart, Fast, Always Active</span>
-                    <span class="text-orange-500 font-semibold">Launch App</span>
-
+                    <span class="text-gray-400">Smart, Fast, Always Active.</span>
+                    <span class="text-orange-500 font-semibold">Launch App &rarr;</span>
                 </div>
-
-                <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-8 max-w-5xl mxauto">Build, Deploy & Talk to AI <br class="hidden md:block">Agents in Seconds</h1>
-                <p class="text-gray-400 text-lg md:text-xl max-w-2xl max-w-2xl mx-auto mb-12">Design AI assistants that research, plan, and execute tasks - all powered by your prompts</p>
-
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] mb-8 max-w-5xl mx-auto">
+                    Build, Deploy & Talk to AI <br class="hidden md:block"> Agents in Seconds.
+                </h1>
+                <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto mb-12">
+                    Design AI assistants that research, plan, and execute tasks — all powered by your prompts.
+                </p>
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <button class="w-full sm:w-auto bg-orange-600 hover:bg-orange-500 text-white px-10 py-4 rounded-full font-bold transition shadow-lg shadow-orange-600/20">Create Agent</button>
                     <button class="w-full sm:w-auto bg-white/5 border border-white/10 px-10 py-4 rounded-full font-bold hover:bg-white/10 transition flex items-center justify-center gap-2 italic font-serif">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"></path></svg> Watch Demo
-
-                    
                     </button>
-
                 </div>
-                
 
+                <div class="mt-24 pt-12 border-t border-white/5">
+                    <p class="text-sm text-gray-500 uppercase tracking-[0.2em] mb-10">Trusting by leading brands, including —</p>
+                    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-40 grayscale">
+                        <span class="text-2xl font-bold">Microsoft</span>
+                        <span class="text-2xl font-bold italic">Framer</span>
+                        <span class="text-2xl font-bold underline">Instagram</span>
+                        <span class="text-2xl font-bold tracking-tighter">HUAWEI</span>
+                        <span class="text-2xl font-bold">Walmart *</span>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-3xl h-96 bg-orange-600/20 blur-[120px] rounded-full -z-0"></div>
+        </section>
+
+        <section class="py-24 px-6 border-t border-white/5">
+            <div class="container mx-auto">
+                <div class="text-center mb-20">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 italic">From idea to autonomous agent <br> quickly and effortlessly.</h2>
+                    <p class="text-gray-400">Empower your business with AI agents that optimize processes and accelerate performance.</p>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center gap-12 mb-32">
+                    <div class="w-full md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" class="rounded-[2rem] border border-white/10 shadow-2xl" alt="Prompting">
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-12">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="w-10 h-10 rounded-full bg-orange-600/20 border border-orange-600/40 flex items-center justify-center text-orange-500 font-bold">01</span>
+                            <h3 class="text-3xl font-bold">Start with a prompt</h3>
+                        </div>
+                        <p class="text-gray-400 text-lg mb-8">Start with a simple prompt describing what you want your agent to do. Our builder interprets your idea and creates the structure for you in seconds.</p>
+                        <a href="#" class="text-white font-semibold flex items-center gap-2 hover:underline">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    </div>
+                </div>
+
+                <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                    <div class="w-full md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=800" class="rounded-[2rem] border border-white/10 shadow-2xl" alt="Adjusting">
+                    </div>
+                    <div class="w-full md:w-1/2 md:pr-12">
+                        <div class="flex items-center gap-4 mb-6">
+                            <span class="w-10 h-10 rounded-full bg-orange-600/20 border border-orange-600/40 flex items-center justify-center text-orange-500 font-bold">02</span>
+                            <h3 class="text-3xl font-bold">Adjust and personalize</h3>
+                        </div>
+                        <p class="text-gray-400 text-lg mb-8">Adjust tasks, actions and integrations. Add personality, rules and data sources to make the agent work exactly the way you want.</p>
+                        <a href="#" class="text-white font-semibold flex items-center gap-2 hover:underline">Learn More <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 bg-white/[0.02]">
+            <div class="container mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Our Pricing Plans</h2>
+                    <p class="text-gray-400 max-w-xl mx-auto">A visual collection of our most recent works — each piece crafted with intention, emotion and style.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                    <div class="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col">
+                        <div class="flex justify-between items-start mb-8">
+                            <div>
+                                <h3 class="text-4xl font-bold mb-2">$19<span class="text-sm font-normal text-gray-500">/month</span></h3>
+                                <p class="text-sm text-gray-400">For individuals and small teams</p>
+                            </div>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-bold border border-white/10 uppercase tracking-widest flex items-center gap-1">🚀 Starter</span>
+                        </div>
+                        <button class="w-full py-3 rounded-xl bg-white/5 border border-white/10 font-bold hover:bg-white/10 mb-8 transition">Get Started</button>
+                        <ul class="space-y-4 text-sm text-gray-400">
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> Up to 10 projects</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> 10 AI tasks/month</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> Basic text generation</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> Email support only</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 rounded-[2.5rem] bg-white/5 border-2 border-orange-600/50 flex flex-col relative scale-105 shadow-2xl shadow-orange-600/10">
+                        <div class="flex justify-between items-start mb-8">
+                            <div>
+                                <h3 class="text-4xl font-bold mb-2">$49<span class="text-sm font-normal text-gray-500">/month</span></h3>
+                                <p class="text-sm text-gray-400">For growing teams and startups</p>
+                            </div>
+                            <span class="px-3 py-1 bg-orange-600 rounded-full text-[10px] font-bold uppercase tracking-widest flex items-center gap-1">⚡ Professional</span>
+                        </div>
+                        <button class="w-full py-3 rounded-xl bg-white text-black font-bold hover:bg-gray-200 mb-8 transition">Upgrade Now</button>
+                        <ul class="space-y-4 text-sm text-gray-400">
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> Unlimited AI tasks</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> API Integration</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> Text & Image outputs</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> Priority Support</li>
+                        </ul>
+                    </div>
+                    <div class="p-8 rounded-[2.5rem] bg-white/5 border border-white/10 flex flex-col">
+                        <div class="flex justify-between items-start mb-8">
+                            <div>
+                                <h3 class="text-4xl font-bold mb-2">$149<span class="text-sm font-normal text-gray-500">/month</span></h3>
+                                <p class="text-sm text-gray-400">For enterprises and agencies</p>
+                            </div>
+                            <span class="px-3 py-1 bg-white/5 rounded-full text-[10px] font-bold border border-white/10 uppercase tracking-widest flex items-center gap-1">👑 Enterprise</span>
+                        </div>
+                        <button class="w-full py-3 rounded-xl bg-white/5 border border-white/10 font-bold hover:bg-white/10 mb-8 transition">Contact Sales</button>
+                        <ul class="space-y-4 text-sm text-gray-400">
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> Custom AI Models</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> Dedicated Manager</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> SLA Guarantee</li>
+                            <li class="flex items-center gap-3"><span class="text-orange-500">✔</span> 24/7 Premium Support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 px-6 text-center">
+            <div class="container mx-auto max-w-5xl p-20 rounded-[3rem] bg-white/5 border border-white/10 relative overflow-hidden">
+                <h2 class="text-5xl font-bold mb-6">Ready to build?</h2>
+                <p class="text-gray-400 mb-10 text-lg">See how fast you can turn your ideas into reality. Get started for <br> free, no credit card required.</p>
+                <button class="bg-orange-600 hover:bg-orange-500 px-10 py-4 rounded-full font-bold transition">Try now &rarr;</button>
+                <div class="absolute inset-0 bg-orange-600/5 -z-10 blur-3xl rounded-full"></div>
             </div>
         </section>
     </main>
-    
+
+    <footer class="bg-black py-20 px-6 border-t border-white/10">
+        <div class="container mx-auto text-center">
+            <div class="flex justify-center items-center gap-2 mb-12">
+                <div class="bg-orange-600 p-1 rounded-md">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <span class="text-2xl font-bold tracking-tight">Genesis</span>
+            </div>
+            
+            <div class="flex flex-wrap justify-center gap-8 mb-16 text-gray-400 font-medium">
+                <a href="#" class="hover:text-white">Terms of Service</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Security</a>
+                <a href="#" class="hover:text-white">Sitemap</a>
+            </div>
+
+            <div class="flex justify-center gap-6 mb-12">
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:bg-white hover:text-black transition">𝕏</a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:bg-white hover:text-black transition">in</a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-white/10 hover:bg-white hover:text-black transition">gh</a>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center text-xs text-gray-600 pt-8 border-t border-white/5">
+                <p>Build AI agents for free</p>
+                <p>Copyright &copy; 2026 PrebuiltUI. All rights reserved. Distributed by ThemeWagon</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
