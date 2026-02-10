@@ -31,7 +31,7 @@
         
     </nav>
 
-    <div class="hidden lg:hidden inset-0 bg-gradient-to-b from-orange-700 via-orange-600 to-purple-700 flex flex-col items-center justify-center text-white">
+    <div class="hidden inset-0 z-50 hidden bg-gradient-to-b from-orange-700 via-orange-600 to-purple-700 flex flex-col items-center justify-center">
 
     
     <nav class="space-y-8 text-xl font-semibold text-center">
@@ -82,9 +82,9 @@
             </div>
             <h1 class="text-center text-4xl/13 md:text-6xl/19 mt-4 font-semibold tracking-tight max-w-3xl">Build, Deploy &amp; Talk to AI Agents in Seconds.</h1>
             <p class="text-center text-gray-100 text-base/7 max-w-md mt-6">Design AI assistants that research, plan, and execute tasks — all powered by your prompts.</p>
-            <div class="flex flex-col md:flex-row max-md:w-full items-center gap-4 md:gap-3 mt-6">
-                <button class="btn max-md:w-full glass py-3">Create Agent</button>
-                <button class="btn max-md:w-full glass flex items-center justify-center gap-2 py-3">
+            <div class="flex flex-col md:flex-row max-md:w-full items-center gap-4 md:gap-3 mt-6 ">
+                <button class="btn max-md:w-full glass py-3 bg-black rounded-full px-7 ">Create Agent</button>
+                <button class="btn max-md:w-full glass flex items-center justify-center gap-2 py-3 bg-black rounded-full px-7">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play size-4.5" aria-hidden="true">
                             <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"></path>
                             <circle cx="12" cy="12" r="10"></circle>
@@ -253,69 +253,108 @@
             </div>
         </section>
 
-        <section class="mt-32 flex flex-col items-center">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold max-w-lg mx-auto mt-4 text-white">Here what aur trusted users about our best AI agents.</h2>
-                <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">Empower your business with AI agents that optimize processes and accelerate performance.</p>
-            </div>
+    <section class="relative py-20  overflow-hidden">
 
-            <div class="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                <div class="w-full max-w-88 space-y-5 rounded-lg glass p-5 transition-all duration-300 hover:-translate-y-1">
-                    <div class="flex items-center justify-between">
-                            <p class="font-medium">Founder &amp; CEO</p>
-                            <img class="size-10 rounded-full" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&amp;w=200" alt="Richard Nelson" />
-                    </div>
-                    <p class="line-clamp-3">“Super clean and easy to use. These Tailwind + React components saved me hours of dev time and countless lines of extra code!”</p>
-                    <p class="text-gray-300">- Richard Nelson</p>
-                </div>
+  <div class="relative max-w-7xl mx-auto px-6">
+    
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-white">
+        Here what our trusted users<br />
+        about our best AI agents.
+      </h2>
+      <p class="mt-4 text-gray-200 max-w-2xl mx-auto">
+        Empower your business with AI agents that optimize processes<br />
+        and accelerate performance.
+      </p>
+    </div>
 
-                <div class="w-full max-w-88 space-y-5 rounded-lg glass p-5 transition-all duration-300 hover:-translate-y-1">
-                    <div class="flex items-center justify-between">
-                        <p class="font-medium">Founder &amp; CEO</p>
-                        <img class="size-10 rounded-full" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&amp;w=200" alt="Sophia Martinez" />
-                        </div>
-                    <p class="line-clamp-3">“The design quality is top-notch. Perfect balance between simplicity and style. Highly recommend for any creative developer!”</p>
-                    <p class="text-gray-300">- Sophia Martinez</p>
-                </div>
+   
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      
+      
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+        <div class="flex justify-between items-center mb-4">
+          <span class="font-semibold">Founder & CEO</span>
+          <img src="back1.jpg" class="w-10 h-10 rounded-full" />
+        </div>
+        <p class="text-gray-200 italic">
+          “Super clean and easy to use. These Tailwind + React components saved me
+          hours of dev time and countless lines of code.”
+        </p>
+        <p class="mt-4 text-sm text-gray-300">– Richard Nelson</p>
+      </div>
 
-                <div class="w-full max-w-88 space-y-5 rounded-lg glass p-5 transition-all duration-300 hover:-translate-y-1">
-                    <div class="flex items-center justify-between">
-                        <p class="font-medium">Founder &amp; CEO</p>
-                        <img class="size-10 rounded-full" src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?w=200&amp;auto=format&amp;fit=crop&amp;q=60" alt="Ethan Roberts" />
-                    </div>
-                    <p class="line-clamp-3">“Absolutely love the reusability of these components. My workflow feels 10x faster now with cleaner and more consistent layouts.”</p>
-                    <p class="text-gray-300">- Ethan Roberts</p>
-                </div>
+      
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+        <div class="flex justify-between items-center mb-4">
+          <span class="font-semibold">Founder & CEO</span>
+          <img src="back.jpg" class="w-10 h-10 rounded-full" />
+        </div>
+        <p class="text-gray-200 italic">
+          “The design quality is top-notch. Perfect balance between simplicity
+          and style. Highly recommend for any creative developer!”
+        </p>
+        <p class="mt-4 text-sm text-gray-300">– Sophia Martinez</p>
+      </div>
 
-                <div class="w-full max-w-88 space-y-5 rounded-lg glass p-5 transition-all duration-300 hover:-translate-y-1">
-                    <div class="flex items-center justify-between">
-                        <p class="font-medium">Founder &amp; CEO</p>
-                        <img class="size-10 rounded-full" src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=200&amp;auto=format&amp;fit=crop&amp;q=60" alt="Isabella Kim" />
-                    </div>
-                    <p class="line-clamp-3">“Clean, elegant, and efficient. These components are a dream for any modern web developer who values beautiful code.”</p>
-                    <p class="text-gray-300">- Isabella Kim</p>
-                </div>
-                <div class="w-full max-w-88 space-y-5 rounded-lg glass p-5 transition-all duration-300 hover:-translate-y-1">
-                    <div class="flex items-center justify-between">
-                        <p class="font-medium">Founder &amp; CEO</p>
-                        <img class="size-10 rounded-full" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&amp;w=100&amp;h=100&amp;auto=format&amp;fit=crop" alt="Liam Johnson" />
-                    </div>
-                    <p class="line-clamp-3">“I've tried dozens of UI kits, but this one just feels right. Everything works seamlessly and looks incredibly polished.”</p>
-                    <p class="text-gray-300">- Liam Johnson</p>
-                </div>
+     
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+        <div class="flex justify-between items-center mb-4">
+          <span class="font-semibold">Founder & CEO</span>
+          <img src="lib.jpg" class="w-10 h-10 rounded-full" />
+        </div>
+        <p class="text-gray-200 italic">
+          “Absolutely love the reusability of these components. My workflow feels
+          10x faster now with cleaner and more consistent UI.”
+        </p>
+        <p class="mt-4 text-sm text-gray-300">– Ethan Roberts</p>
+      </div>
 
-                <div class="w-full max-w-88 space-y-5 rounded-lg glass p-5 transition-all duration-300 hover:-translate-y-1">
-                    <div class="flex items-center justify-between">
-                        <p class="font-medium">Founder &amp; CEO</p>
-                        <img class="size-10 rounded-full" src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/userImage/userImage1.png" alt="Ava Patel" />
-                    </div>
-                    <p class="line-clamp-3">“Brilliantly structured components with clean, modern styling. Makes development a joy and design updates super quick.”</p>
-                    <p class="text-gray-300">- Ava Patel</p>
-                </div>
-            </div>
-        </section>
+     
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+        <div class="flex justify-between items-center mb-4">
+          <span class="font-semibold">Founder & CEO</span>
+          <img src="work3.jfif" class="w-10 h-10 rounded-full" />
+        </div>
+        <p class="text-gray-200 italic">
+          “Clean, elegant, and efficient. These components are a dream for any
+          modern web developer who values beautiful code.”
+        </p>
+        <p class="mt-4 text-sm text-gray-300">– Isabella Kim</p>
+      </div>
 
-        <section class="mt-32">
+      
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+        <div class="flex justify-between items-center mb-4">
+          <span class="font-semibold">Founder & CEO</span>
+          <img src="work6.jfif" class="w-10 h-10 rounded-full" />
+        </div>
+        <p class="text-gray-200 italic">
+          “I’ve tried dozens of UI kits, but this one just feels right.
+          Everything works seamlessly and looks incredibly polished.”
+        </p>
+        <p class="mt-4 text-sm text-gray-300">– Liam Johnson</p>
+      </div>
+
+     
+      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+        <div class="flex justify-between items-center mb-4">
+          <span class="font-semibold">Founder & CEO</span>
+          <img src="re.jfif" class="w-10 h-10 rounded-full" />
+        </div>
+        <p class="text-gray-200 italic">
+          “Brilliantly structured components with clean, modern styling. Makes
+          development a joy and design updates super quick.”
+        </p>
+        <p class="mt-4 text-sm text-gray-300">– Ava Patel</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+        <section class=" grid content-center mt-32 w-full max-w-2xl px-6 py-16 text-white">
             <div class="text-center">
                 <h2 class="text-3xl font-semibold max-w-lg mx-auto mt-4 text-white">FAQ's</h2>
                 <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">Looking for answers to your frequently asked questions? Check out our FAQ's section below to find.</p>
@@ -323,7 +362,7 @@
 
             <div id="faq-container" class="mx-auto mt-12 space-y-4 w-full max-w-xl"></div>
 
-            <div class="space-y-4">
+    <div class="space-y-4 content-center">
 
       
       <div class="border border-white/30 rounded-xl overflow-hidden">
@@ -408,7 +447,7 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
 
-      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
+    <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
         <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
            Starter
         </span>
@@ -428,9 +467,9 @@
           <li class="flex gap-3">✔ Email support only</li>
           <li class="flex gap-3">✔ Community resources</li>
         </ul>
-      </div>
+    </div>
 
-      <div class="backdrop-blur-xl bg-orange-500/90 text-white border border-white/30 rounded-2xl p-8 scale-105">
+    <div class="backdrop-blur-xl bg-orange-500/90 text-white border border-white/30 rounded-2xl p-8 scale-105">
 
         <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
            Professional
@@ -451,10 +490,10 @@
           <li class="flex gap-3">✔ Detailed analytics</li>
           <li class="flex gap-3">✔ Team collaboration</li>
         </ul>
-      </div>
+    </div>
 
       
-      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
+    <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
         <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
            Enterprise
         </span>
@@ -474,10 +513,10 @@
           <li class="flex gap-3">✔ SLA uptime guarantee</li>
           <li class="flex gap-3">✔ 24/7 premium support</li>
         </ul>
-      </div>
+    </div>
 
     </div>
-        </section>
+</section>
 
         <div class="flex flex-col max-w-5xl px-4 mt-40 mx-auto items-center justify-center text-center py-16 rounded-xl glass">
             <h2 class="text-2xl md:text-4xl font-medium mt-2">Ready to build?</h2>
