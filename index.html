@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Genesis Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Genesis Template</title>
 </head>
-<body class=" bg-gradient-to-b from-orange-700 via-orange-600 to-purple-700 flex flex-col items-center justify-center text-white">
-    <nav class="sticky top-0 z-50 flex w-full bg-black items-center justify-between px-4 py-3 md:px-16 lg:px-24 transition-all duration-300">
-       <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-lg">g</div>
-        <spa class="text-xl font-bold">Genesis</spa>
-       </div>
-        <div class="hidden items-center space-x-10 md:flex">
-            <a href="#" class="transition hover:text-gray-300 ">Home</a>
-            <a href="#" class="transition hover:text-gray-300">Agents</a>
-            <a href="#" class="transition hover:text-gray-300">Use Cases</a>
-            <a href="#" class="transition hover:text-gray-300">Pricing</a>
-            <a href="#" class="transition hover:text-gray-300">Docs</a>
-            <a href="#" class="btn glass"> Sing Up</a>
-        </div>
-        <button class="transition active:scale-90 md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu size-6.5" aria-hidden="true">
-                <path d="M4 5h16"></path>
-                <path d="M4 12h16"></path>
-                <path d="M4 19h16"></path>
-            </svg>
-            
-        </button>
-        
-    </nav>
 
-    <div class="hidden inset-0 z-50 hidden bg-gradient-to-b from-orange-700 via-orange-600 to-purple-700 flex flex-col items-center justify-center">
+<body
+  class=" bg-gradient-to-t from-orange-400/100 via-orange-1000 to-purple-500 flex flex-col items-center justify-center text-white">
+  <nav
+    class="sticky top-0 z-50 flex w-full bg-black items-center justify-between px-4 py-3 md:px-16 lg:px-24 transition-all duration-300">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-lg">g
+      </div>
+      <spa class="text-xl font-bold">Genesis</spa>
+    </div>
+    <div class="hidden items-center space-x-10 md:flex">
+      <a href="#" class="transition hover:text-gray-300 ">Home</a>
+      <a href="#" class="transition hover:text-gray-300">Agents</a>
+      <a href="#" class="transition hover:text-gray-300">Use Cases</a>
+      <a href="#" class="transition hover:text-gray-300">Pricing</a>
+      <a href="#" class="transition hover:text-gray-300">Docs</a>
+      <a href="#" class="btn glass"> Sing Up</a>
+    </div>
+    <button class="transition active:scale-90 md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="lucide lucide-menu size-6.5" aria-hidden="true">
+        <path d="M4 5h16"></path>
+        <path d="M4 12h16"></path>
+        <path d="M4 19h16"></path>
+      </svg>
 
-    
+    </button>
+
+  </nav>
+
+  <div
+    class="hidden inset-0 z-50 hidden bg-gradient-to-b from-orange-700 via-orange-600 to-purple-700 flex flex-col items-center justify-center">
+
+
     <nav class="space-y-8 text-xl font-semibold text-center">
       <a href="#" class="block hover:opacity-80">Home</a>
       <a href="#" class="block hover:opacity-80">Agents</a>
@@ -42,539 +50,585 @@
       <a href="#" class="block hover:opacity-80">Docs</a>
     </nav>
 
-  
-    <button class="mt-12 px-10 py-3 rounded-full border border-white/40 bg-white/20 backdrop-blur-md text-white font-semibold hover:bg-white/30 transition">
+
+    <button
+      class="mt-12 px-10 py-3 rounded-full border border-white/40 bg-white/20 backdrop-blur-md text-white font-semibold hover:bg-white/30 transition">
       Sign Up
     </button>
 
-   
-    <button class="mt-10 w-12 h-12 flex items-center justify-center rounded-lg border border-white/40 hover:bg-white/20 transition">
+
+    <button
+      class="mt-10 w-12 h-12 flex items-center justify-center rounded-lg border border-white/40 hover:bg-white/20 transition">
       ✕
     </button>
 
   </div>
 
-    <div id="mobile-menu" class="fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-black/20 text-lg font-medium backdrop-blur-2xl transition duration-300 md:hidden -translate-x-full">
-        <a href="#!">Home</a>
-        <a href="#agents">Agents</a>
-        <a href="#use-cases">Use Cases</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#docs">Docs</a>
-        <a href="/" class="btn glass">Sign Up</a>
-        <button id="close-btn" class="rounded-md p-2 glass">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x" aria-hidden="true">
-                <path d="M18 6 6 18"></path>
-                <path d="m6 6 12 12"></path>
-            </svg>
+  <div id="mobile-menu"
+    class="fixed inset-0 z-50 flex flex-col items-center justify-center gap-6 bg-black/20 text-lg font-medium backdrop-blur-2xl transition duration-300 md:hidden -translate-x-full">
+    <a href="#!">Home</a>
+    <a href="#agents">Agents</a>
+    <a href="#use-cases">Use Cases</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#docs">Docs</a>
+    <a href="/" class="btn glass">Sign Up</a>
+    <button id="close-btn" class="rounded-md p-2 glass">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x"
+        aria-hidden="true">
+        <path d="M18 6 6 18"></path>
+        <path d="m6 6 12 12"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="fixed inset-0 overflow-hidden -z-20 pointer-events-none">
+    <div class="absolute rounded-full top-80 left-2/5 -translate-x-1/2 size-130 bg-[#D10A8A] blur-[100px]"></div>
+    <div class="absolute rounded-full top-80 right-0 -translate-x-1/2 size-130 bg-[#2E08CF] blur-[100px]"></div>
+    <div class="absolute rounded-full top-0 left-1/2 -translate-x-1/2 size-130 bg-[#F26A06] blur-[100px]"></div>
+  </div>
+
+  <main class="px-4">
+    <section class="flex flex-col items-center">
+      <div class="flex items-center gap-3 mt-32">
+        <p>Smart,Fast, Always Active</p>
+        <button class="btn glass "><span class="px-3 py-1 rounded-full bg-black text-xs font-semibold"> Launch
+            App</span></button>
+      </div>
+      <h1 class="text-center text-4xl/13 md:text-6xl/19 mt-4 font-semibold tracking-tight max-w-3xl">Build, Deploy &amp;
+        Talk to AI Agents in Seconds.</h1>
+      <p class="text-center text-gray-100 text-base/7 max-w-md mt-6">Design AI assistants that research, plan, and
+        execute tasks — all powered by your prompts.</p>
+      <div class="flex flex-col md:flex-row max-md:w-full items-center gap-4 md:gap-3 mt-6 ">
+        <button class="btn max-md:w-full glass py-3 bg-black rounded-full px-7 ">Create Agent</button>
+        <button class="btn max-md:w-full glass flex items-center justify-center gap-2 py-3 bg-black rounded-full px-7">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-circle-play size-4.5" aria-hidden="true">
+            <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z">
+            </path>
+            <circle cx="12" cy="12" r="10"></circle>
+          </svg>
+          Watch Demo
         </button>
-    </div>
-    <div class="fixed inset-0 overflow-hidden -z-20 pointer-events-none">
-        <div class="absolute rounded-full top-80 left-2/5 -translate-x-1/2 size-130 bg-[#D10A8A] blur-[100px]"></div>
-        <div class="absolute rounded-full top-80 right-0 -translate-x-1/2 size-130 bg-[#2E08CF] blur-[100px]"></div>
-        <div class="absolute rounded-full top-0 left-1/2 -translate-x-1/2 size-130 bg-[#F26A06] blur-[100px]"></div>
-    </div>
+      </div>
+    </section>
 
-    <main class="px-4">
-        <section class="flex flex-col items-center">
-            <div class="flex items-center gap-3 mt-32">
-                <p>Smart,Fast, Always Active</p>
-                <button class="btn glass py-1 px-3 text-xs">Launch App</button>
-            </div>
-            <h1 class="text-center text-4xl/13 md:text-6xl/19 mt-4 font-semibold tracking-tight max-w-3xl">Build, Deploy &amp; Talk to AI Agents in Seconds.</h1>
-            <p class="text-center text-gray-100 text-base/7 max-w-md mt-6">Design AI assistants that research, plan, and execute tasks — all powered by your prompts.</p>
-            <div class="flex flex-col md:flex-row max-md:w-full items-center gap-4 md:gap-3 mt-6 ">
-                <button class="btn max-md:w-full glass py-3 bg-black rounded-full px-7 ">Create Agent</button>
-                <button class="btn max-md:w-full glass flex items-center justify-center gap-2 py-3 bg-black rounded-full px-7">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-play size-4.5" aria-hidden="true">
-                            <path d="M9 9.003a1 1 0 0 1 1.517-.859l4.997 2.997a1 1 0 0 1 0 1.718l-4.997 2.997A1 1 0 0 1 9 14.996z"></path>
-                            <circle cx="12" cy="12" r="10"></circle>
-                    </svg>
-                        Watch Demo
-                </button>
-            </div>
-        </section>
+    <section class="mt-14">
+      <p class="py-6 mt-14 text-center">Trusting by leading brands, including -</p>
+      <div class="flex flex-wrap items-center justify-center gap-12">
 
-        <section class="mt-14">
-            <p class="py-6 mt-14 text-center">Trusting by leading brands, including -</p>
-             <div class="flex flex-wrap items-center justify-center gap-12">
+        <div class="flex items-center gap-3 text-xl font-semibold">
+          <span class="grid grid-cols-2 gap-1">
+            <span class="w-3 h-3 bg-red-500"></span>
+            <span class="w-3 h-3 bg-green-500"></span>
+            <span class="w-3 h-3 bg-blue-500"></span>
+            <span class="w-3 h-3 bg-white"></span>
+          </span>
+          Microsoft
 
-    <div class="flex items-center gap-3 text-xl font-semibold">
-        <span class="grid grid-cols-2 gap-1">
-          <span class="w-3 h-3 bg-white"></span>
-          <span class="w-3 h-3 bg-white"></span>
-          <span class="w-3 h-3 bg-white"></span>
-          <span class="w-3 h-3 bg-white"></span>
-        </span>
-        Microsoft
-    
-    </div>
-    <div class="flex items-center gap-3 text-xl font-semibold">
-        <span class="relative w-4 h-4">
+        </div>
+        <div class="flex items-center gap-3 text-xl font-semibold">
+          <span class="relative w-4 h-4">
             <span class="absolute w-4 h-2 bg-white top-0 left-0"></span>
             <span class="absolute w-2 h-4 bg-white top-0 left-0"></span>
-        </span>
-        
-        Framer
-    </div>
-<div class="flex items-center gap-3 text-xl font-semibold">
-  <span class="w-4 h-4 border-2 border-white rounded-sm flex items-center justify-center">
-    <span class="w-1.5 h-1.5 bg-white rounded-full"></span>
-  </span>
-  Instagram
-</div>
 
-    
-<div class="flex items-center gap-3 text-xl font-semibold">
-    <span class="flex gap-0.5">
-      <span class="w-1.5 h-4 bg-white rounded-full"></span>
-      <span class="w-1.5 h-4 bg-white rounded-full"></span>
-      <span class="w-1.5 h-4 bg-white rounded-full"></span>
-      <span class="w-1.5 h-4 bg-white rounded-full"></span>
-    </span>
-    HUAWEI
-</div>
+          </span>
 
-<div class="flex items-center gap-3 text-xl font-semibold">
-    <span class="relative w-4 h-4">
-      <span class="absolute w-1.5 h-1.5 bg-white top-0 left-1/2 -translate-x-1/2 rounded-full"></span>
-      <span class="absolute w-1.5 h-1.5 bg-white bottom-0 left-1/2 -translate-x-1/2 rounded-full"></span>
-      <span class="absolute w-1.5 h-1.5 bg-white left-0 top-1/2 -translate-y-1/2 rounded-full"></span>
-      <span class="absolute w-1.5 h-1.5 bg-white right-0 top-1/2 -translate-y-1/2 rounded-full"></span>
-    </span>
-    Walmart
-</div>
+          Framer
+        </div>
+        <div class="flex items-center gap-3 text-xl font-semibold">
+          <span class="w-4 h-4 border-2 border-white rounded-sm flex items-center justify-center">
+            <span class="w-1.5 h-1.5 bg-white rounded-full"></span>
+          </span>
+          Instagram
+        </div>
 
-    </div>
-        </section>
 
-        <section class="mt-32">
-           
-    
-    <div class="text-center mb-16">
-      <h2 class="text-4xl font-bold mb-4">Agent features</h2>
-      <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">
-        Design AI assistants that research, plan, and execute tasks —
-        all powered by your prompts.
-      </p>
-    </div>
+        <div class="flex items-center gap-3 text-xl font-semibold">
+          <span class="flex gap-0.5">
+            <span class="w-1.5 h-4 bg-white rounded-full"></span>
+            <span class="w-1.5 h-4 bg-white rounded-full"></span>
+            <span class="w-1.5 h-4 bg-white rounded-full"></span>
+            <span class="w-1.5 h-4 bg-white rounded-full"></span>
+          </span>
+          HUAWEI
+        </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex items-center gap-3 text-xl font-semibold">
+          <span class="relative w-4 h-4">
+            <span class="absolute w-1.5 h-1.5 bg-white top-0 left-1/2 -translate-x-1/2 rounded-full"></span>
+            <span class="absolute w-1.5 h-1.5 bg-white bottom-0 left-1/2 -translate-x-1/2 rounded-full"></span>
+            <span class="absolute w-1.5 h-1.5 bg-white left-0 top-1/2 -translate-y-1/2 rounded-full"></span>
+            <span class="absolute w-1.5 h-1.5 bg-white right-0 top-1/2 -translate-y-1/2 rounded-full"></span>
+          </span>
+          Walmart
+        </div>
 
-      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
-        <div class="mb-6 text-3xl"><img src="ag.png" width="60" height="30" alt="Autonomous Agent"></div>
-        <h3 class="text-xl font-semibold mb-3">Autonomous Agents</h3>
-        <p class="text-gray-200">
-          Agents that plan, execute & think step-by-step.
+      </div>
+    </section>
+
+    <section class="mt-32">
+
+
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Agent features</h2>
+        <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">
+          Design AI assistants that research, plan, and execute tasks —
+          all powered by your prompts.
         </p>
       </div>
 
-     
-      <div class="backdrop-blur-xl bg-orange-500/90 border border-white/30 rounded-2xl p-8">
-        <div class="mb-6 text-3xl"><img src="mem.jfif" width="60" height="30" alt="Learning and memory"></div>
-        <h3 class="text-xl font-semibold mb-3">Memory & Learning</h3>
-        <p class="text-gray-100">
-          Agents retain memory and improve over time.
-        </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
+          <div class="mb-6 text-3xl"><img src="ag.png" width="60" height="30" alt="Autonomous Agent"></div>
+          <h3 class="text-xl font-semibold mb-3">Autonomous Agents</h3>
+          <p class="text-gray-200">
+            Agents that plan, execute & think step-by-step.
+          </p>
+        </div>
+
+
+        <div class="backdrop-blur-xl bg-orange-500/90 border border-white/30 rounded-2xl p-8">
+          <div class="mb-6 text-3xl"><img src="mem.jfif" width="60" height="30" alt="Learning and memory"></div>
+          <h3 class="text-xl font-semibold mb-3">Memory & Learning</h3>
+          <p class="text-gray-100">
+            Agents retain memory and improve over time.
+          </p>
+        </div>
+
+        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
+          <div class="mb-6 text-3xl"><img src="re.jfif" width="60" height="2" alt="real-time execution"></div>
+          <h3 class="text-xl font-semibold mb-3">Real-time Execution</h3>
+          <p class="text-gray-200">
+            Fast responses with async task processing.
+          </p>
+        </div>
+
       </div>
 
-      <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
-        <div class="mb-6 text-3xl"><img src="re.jfif" width="60" height="2" alt="real-time execution"></div>
-        <h3 class="text-xl font-semibold mb-3">Real-time Execution</h3>
-        <p class="text-gray-200">
-          Fast responses with async task processing.
-        </p>
+    </section>
+
+    <section class="mt-32 relative">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold max-w-lg mx-auto mt-4 text-white">From idea to autonomous agent quickly and
+          effortlessly.</h2>
+        <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">Empower your business with AI agents that
+          optimize processes and accelerate performance.</p>
       </div>
 
-    </div>
-        
-        </section>
+      <div class="relative space-y-20 md:space-y-30 mt-20">
+        <div class="flex-col items-center hidden md:flex absolute left-1/2 -translate-x-1/2">
+          <p class="flex items-center justify-center font-medium my-10 aspect-square bg-black/15 p-2 rounded-full">01
+          </p>
+          <div class="h-72 w-0.5 bg-linear-to-b from-transparent via-white to-transparent"></div>
+          <p class="flex items-center justify-center font-medium my-10 aspect-square bg-black/15 p-2 rounded-full">02
+          </p>
+          <div class="h-72 w-0.5 bg-linear-to-b from-transparent via-white to-transparent"></div>
+          <p class="flex items-center justify-center font-medium my-10 aspect-square bg-black/15 p-2 rounded-full">03
+          </p>
+        </div>
+        <div class="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row">
+          <img src="lab.jpg" alt="step" class="flex-1 h-auto w-full max-w-sm rounded-2xl" />
+          <div class="flex-1 flex flex-col gap-6 md:px-6 max-w-md">
+            <h3 class="text-2xl font-medium text-white">Start with a prompt</h3>
+            <p class="text-gray-100 text-sm/6 line-clamp-3 pb-2">Start with a simple prompt describing what you want
+              your agent to do. Our builder interprets your idea and creates the structure for you in seconds</p>
+            <a href="#" class="flex items-center gap-2">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-external-link size-4" aria-hidden="true">
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14 21 3"></path>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-        <section class="mt-32 relative">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold max-w-lg mx-auto mt-4 text-white">From idea to autonomous agent quickly and effortlessly.</h2>
-                <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">Empower your business with AI agents that optimize processes and accelerate performance.</p>
-            </div>
+        <div class="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row-reverse">
+          <img src="work3.jfif" alt="step" class="flex-1 h-auto w-full max-w-sm rounded-2xl" />
+          <div class="flex-1 flex flex-col gap-6 md:px-6 max-w-md">
+            <h3 class="text-2xl font-medium text-white">Adjust and personalize</h3>
+            <p class="text-gray-100 text-sm/6 line-clamp-3 pb-2">Adjust tasks, actions and integrations. Add
+              personality, rules and data sources to make the agent work exactly the way you want.</p>
+            <a href="#" class="flex items-center gap-2">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-external-link size-4" aria-hidden="true">
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14 21 3"></path>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
 
-            <div class="relative space-y-20 md:space-y-30 mt-20">
-                <div class="flex-col items-center hidden md:flex absolute left-1/2 -translate-x-1/2">
-                    <p class="flex items-center justify-center font-medium my-10 aspect-square bg-black/15 p-2 rounded-full">01</p>
-                    <div class="h-72 w-0.5 bg-linear-to-b from-transparent via-white to-transparent"></div>
-                    <p class="flex items-center justify-center font-medium my-10 aspect-square bg-black/15 p-2 rounded-full">02</p>
-                    <div class="h-72 w-0.5 bg-linear-to-b from-transparent via-white to-transparent"></div>
-                    <p class="flex items-center justify-center font-medium my-10 aspect-square bg-black/15 p-2 rounded-full">03</p>
-                </div>
-                <div class="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row">
-                    <img src="lab.jpg" alt="step" class="flex-1 h-auto w-full max-w-sm rounded-2xl" />
-                    <div class="flex-1 flex flex-col gap-6 md:px-6 max-w-md">
-                        <h3 class="text-2xl font-medium text-white">Start with a prompt</h3>
-                        <p class="text-gray-100 text-sm/6 line-clamp-3 pb-2">Start with a simple prompt describing what you want your agent to do. Our builder interprets your idea and creates the structure for you in seconds</p>
-                        <a href="https://prebuiltui.com/tailwind-templates" class="flex items-center gap-2">
-                                Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link size-4" aria-hidden="true">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row-reverse">
-                     <img src="work3.jfif" alt="step" class="flex-1 h-auto w-full max-w-sm rounded-2xl" />
-                    <div class="flex-1 flex flex-col gap-6 md:px-6 max-w-md">
-                        <h3 class="text-2xl font-medium text-white">Adjust and personalize</h3>
-                        <p class="text-gray-100 text-sm/6 line-clamp-3 pb-2">Adjust tasks, actions and integrations. Add personality, rules and data sources to make the agent work exactly the way you want.</p>
-                        <a href="https://prebuiltui.com/tailwind-templates" class="flex items-center gap-2">
-                                Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link size-4" aria-hidden="true">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row">
-                        <img src="work6.jfif" alt="step" class="flex-1 h-auto w-full max-w-sm rounded-2xl" />
-                    <div class="flex-1 flex flex-col gap-6 md:px-6 max-w-md">
-                        <h3 class="text-2xl font-medium text-white">Launch &amp; Automate</h3>
-                        <p class="text-gray-100 text-sm/6 line-clamp-3 pb-2">Deploy your agent and let it run. It executes tasks autonomously, reports results, and continues working in the background.</p>
-                        <a href="https://prebuiltui.com/tailwind-templates" class="flex items-center gap-2">
-                            Learn More
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link size-4" aria-hidden="true">
-                                <path d="M15 3h6v6"></path>
-                                <path d="M10 14 21 3"></path>
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="flex items-center justify-center gap-6 md:gap-20 flex-col md:flex-row">
+          <img src="work6.jfif" alt="step" class="flex-1 h-auto w-full max-w-sm rounded-2xl" />
+          <div class="flex-1 flex flex-col gap-6 md:px-6 max-w-md">
+            <h3 class="text-2xl font-medium text-white">Launch &amp; Automate</h3>
+            <p class="text-gray-100 text-sm/6 line-clamp-3 pb-2">Deploy your agent and let it run. It executes tasks
+              autonomously, reports results, and continues working in the background.</p>
+            <a href="#" class="flex items-center gap-2">
+              Learn More
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-external-link size-4" aria-hidden="true">
+                <path d="M15 3h6v6"></path>
+                <path d="M10 14 21 3"></path>
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="relative py-20  overflow-hidden">
 
-  <div class="relative max-w-7xl mx-auto px-6">
-    
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold text-white">
-        Here what our trusted users<br />
-        about our best AI agents.
-      </h2>
-      <p class="mt-4 text-gray-200 max-w-2xl mx-auto">
-        Empower your business with AI agents that optimize processes<br />
-        and accelerate performance.
-      </p>
-    </div>
+      <div class="relative max-w-7xl mx-auto px-6">
 
-   
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      
-      
-      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
-        <div class="flex justify-between items-center mb-4">
-          <span class="font-semibold">Founder & CEO</span>
-          <img src="back1.jpg" class="w-10 h-10 rounded-full" />
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white">
+            Here what our trusted users<br />
+            about our best AI agents.
+          </h2>
+          <p class="mt-4 text-gray-200 max-w-2xl mx-auto">
+            Empower your business with AI agents that optimize processes<br />
+            and accelerate performance.
+          </p>
         </div>
-        <p class="text-gray-200 italic">
-          “Super clean and easy to use. These Tailwind + React components saved me
-          hours of dev time and countless lines of code.”
-        </p>
-        <p class="mt-4 text-sm text-gray-300">– Richard Nelson</p>
-      </div>
-
-      
-      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
-        <div class="flex justify-between items-center mb-4">
-          <span class="font-semibold">Founder & CEO</span>
-          <img src="back.jpg" class="w-10 h-10 rounded-full" />
-        </div>
-        <p class="text-gray-200 italic">
-          “The design quality is top-notch. Perfect balance between simplicity
-          and style. Highly recommend for any creative developer!”
-        </p>
-        <p class="mt-4 text-sm text-gray-300">– Sophia Martinez</p>
-      </div>
-
-     
-      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
-        <div class="flex justify-between items-center mb-4">
-          <span class="font-semibold">Founder & CEO</span>
-          <img src="lib.jpg" class="w-10 h-10 rounded-full" />
-        </div>
-        <p class="text-gray-200 italic">
-          “Absolutely love the reusability of these components. My workflow feels
-          10x faster now with cleaner and more consistent UI.”
-        </p>
-        <p class="mt-4 text-sm text-gray-300">– Ethan Roberts</p>
-      </div>
-
-     
-      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
-        <div class="flex justify-between items-center mb-4">
-          <span class="font-semibold">Founder & CEO</span>
-          <img src="work3.jfif" class="w-10 h-10 rounded-full" />
-        </div>
-        <p class="text-gray-200 italic">
-          “Clean, elegant, and efficient. These components are a dream for any
-          modern web developer who values beautiful code.”
-        </p>
-        <p class="mt-4 text-sm text-gray-300">– Isabella Kim</p>
-      </div>
-
-      
-      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
-        <div class="flex justify-between items-center mb-4">
-          <span class="font-semibold">Founder & CEO</span>
-          <img src="work6.jfif" class="w-10 h-10 rounded-full" />
-        </div>
-        <p class="text-gray-200 italic">
-          “I’ve tried dozens of UI kits, but this one just feels right.
-          Everything works seamlessly and looks incredibly polished.”
-        </p>
-        <p class="mt-4 text-sm text-gray-300">– Liam Johnson</p>
-      </div>
-
-     
-      <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
-        <div class="flex justify-between items-center mb-4">
-          <span class="font-semibold">Founder & CEO</span>
-          <img src="re.jfif" class="w-10 h-10 rounded-full" />
-        </div>
-        <p class="text-gray-200 italic">
-          “Brilliantly structured components with clean, modern styling. Makes
-          development a joy and design updates super quick.”
-        </p>
-        <p class="mt-4 text-sm text-gray-300">– Ava Patel</p>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
-        <section class=" grid content-center mt-32 w-full max-w-2xl px-6 py-16 text-white">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold max-w-lg mx-auto mt-4 text-white">FAQ's</h2>
-                <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">Looking for answers to your frequently asked questions? Check out our FAQ's section below to find.</p>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+            <div class="flex justify-between items-center mb-4">
+              <span class="font-semibold">Founder & CEO</span>
+              <img src="back1.jpg" class="w-10 h-10 rounded-full" />
             </div>
+            <p class="text-gray-200 italic">
+              “Super clean and easy to use. These Tailwind + React components saved me
+              hours of dev time and countless lines of code.”
+            </p>
+            <p class="mt-4 text-sm text-gray-300">– Richard Nelson</p>
+          </div>
 
-            <div id="faq-container" class="mx-auto mt-12 space-y-4 w-full max-w-xl"></div>
 
-    <div class="space-y-4 content-center">
-
-      
-      <div class="border border-white/30 rounded-xl overflow-hidden">
-        <button  class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
-          Do I need coding or design experience to use PrebuiltUI?
-          <span id="icon-1">⌄</span>
-        </button>
-        <div id="faq-1" class="hidden px-6 pb-4 text-gray-200">
-          No, PrebuiltUI is designed for everyone. You can easily use
-          prebuilt components without any coding or design experience.
-        </div>
-      </div>
-
-      
-      <div class="border border-white/30 rounded-xl overflow-hidden">
-        <button  class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
-          What is PrebuiltUI and how does it help developers and designers?
-          <span id="icon-2">⌄</span>
-        </button>
-        <div id="faq-2" class="hidden px-6 pb-4 text-gray-200">
-          PrebuiltUI provides ready-made UI components that help developers
-          and designers build projects faster and more efficiently.
-        </div>
-      </div>
-
-      
-      <div class="border border-white/30 rounded-xl overflow-hidden">
-        <button  class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
-          Can I use PrebuiltUI components in my existing project?
-          <span id="icon-3">⌄</span>
-        </button>
-        <div id="faq-3" class="hidden px-6 pb-4 text-gray-200">
-          Yes, PrebuiltUI components can be easily integrated into
-          existing projects.
-        </div>
-      </div>
-
-     
-      <div class="border border-white/30 rounded-xl overflow-hidden">
-        <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
-          How customizable are the generated components?
-          <span id="icon-4">⌄</span>
-        </button>
-        <div id="faq-4" class="hidden px-6 pb-4 text-gray-200">
-          All components are highly customizable using Tailwind CSS utility classes.
-        </div>
-      </div>
-
-     
-      <div class="border border-white/30 rounded-xl overflow-hidden">
-        <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
-          Does PrebuiltUI support team collaboration?
-          <span id="icon-5">⌄</span>
-        </button>
-        <div id="faq-5" class="hidden px-6 pb-4 text-gray-200">
-          Yes, PrebuiltUI allows easy sharing and collaboration among teams.
-        </div>
-      </div>
-
-      
-      <div class="border border-white/30 rounded-xl overflow-hidden">
-        <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
-          Can I try PrebuiltUI before purchasing a plan?
-          <span id="icon-6">⌄</span>
-        </button>
-        <div id="faq-6" class="hidden px-6 pb-4 text-gray-200">
-          Yes, you can try PrebuiltUI for free before upgrading to a paid plan.
-        </div>
-      </div>
-
-    </div>
-        </section>
-
-        <section class="mt-32">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold max-w-lg mx-auto mt-4 text-white">Our Pricing Plans</h2>
-                <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">A visual collection of our most recent works - each piece crafted with intention, emotion and style.</p>
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+            <div class="flex justify-between items-center mb-4">
+              <span class="font-semibold">Founder & CEO</span>
+              <img src="back.jpg" class="w-10 h-10 rounded-full" />
             </div>
-            <div id="pricing-container" class="mt-12 flex flex-wrap items-center justify-center gap-6"></div>
+            <p class="text-gray-200 italic">
+              “The design quality is top-notch. Perfect balance between simplicity
+              and style. Highly recommend for any creative developer!”
+            </p>
+            <p class="mt-4 text-sm text-gray-300">– Sophia Martinez</p>
+          </div>
 
-    
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+            <div class="flex justify-between items-center mb-4">
+              <span class="font-semibold">Founder & CEO</span>
+              <img src="lib.jpg" class="w-10 h-10 rounded-full" />
+            </div>
+            <p class="text-gray-200 italic">
+              “Absolutely love the reusability of these components. My workflow feels
+              10x faster now with cleaner and more consistent UI.”
+            </p>
+            <p class="mt-4 text-sm text-gray-300">– Ethan Roberts</p>
+          </div>
 
 
-    <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
-        <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
-           Starter
-        </span>
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+            <div class="flex justify-between items-center mb-4">
+              <span class="font-semibold">Founder & CEO</span>
+              <img src="work3.jfif" class="w-10 h-10 rounded-full" />
+            </div>
+            <p class="text-gray-200 italic">
+              “Clean, elegant, and efficient. These components are a dream for any
+              modern web developer who values beautiful code.”
+            </p>
+            <p class="mt-4 text-sm text-gray-300">– Isabella Kim</p>
+          </div>
 
-        <h3 class="text-4xl font-bold mb-2">$19 <span class="text-base font-normal">/month</span></h3>
-        <p class="text-gray-200 mb-6">For individuals and small teams</p>
 
-        <button class="w-full py-3 mb-8 rounded-lg bg-white/20 hover:bg-white/30 transition">
-          Get Started
-        </button>
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+            <div class="flex justify-between items-center mb-4">
+              <span class="font-semibold">Founder & CEO</span>
+              <img src="work6.jfif" class="w-10 h-10 rounded-full" />
+            </div>
+            <p class="text-gray-200 italic">
+              “I’ve tried dozens of UI kits, but this one just feels right.
+              Everything works seamlessly and looks incredibly polished.”
+            </p>
+            <p class="mt-4 text-sm text-gray-300">– Liam Johnson</p>
+          </div>
 
-        <ul class="space-y-4 text-sm">
-          <li class="flex gap-3">✔ Up to 10 projects</li>
-          <li class="flex gap-3">✔ 10 AI tasks/month</li>
-          <li class="flex gap-3">✔ Basic text generation</li>
-          <li class="flex gap-3">✔ Simple chatbot access</li>
-          <li class="flex gap-3">✔ Email support only</li>
-          <li class="flex gap-3">✔ Community resources</li>
-        </ul>
-    </div>
 
-    <div class="backdrop-blur-xl bg-orange-500/90 text-white border border-white/30 rounded-2xl p-8 scale-105">
+          <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 text-white">
+            <div class="flex justify-between items-center mb-4">
+              <span class="font-semibold">Founder & CEO</span>
+              <img src="re.jfif" class="w-10 h-10 rounded-full" />
+            </div>
+            <p class="text-gray-200 italic">
+              “Brilliantly structured components with clean, modern styling. Makes
+              development a joy and design updates super quick.”
+            </p>
+            <p class="mt-4 text-sm text-gray-300">– Ava Patel</p>
+          </div>
 
-        <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
-           Professional
-        </span>
-
-        <h3 class="text-4xl font-bold mb-2">$49 <span class="text-base font-normal">/month</span></h3>
-        <p class="text-gray-100 mb-6">For growing teams and startups</p>
-
-        <button class="w-full py-3 mb-8 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition">
-          Upgrade Now
-        </button>
-
-        <ul class="space-y-4 text-sm">
-          <li class="flex gap-3">✔ Unlimited AI tasks</li>
-          <li class="flex gap-3">✔ API integration</li>
-          <li class="flex gap-3">✔ Text & image outputs</li>
-          <li class="flex gap-3">✔ Priority chat & email support</li>
-          <li class="flex gap-3">✔ Detailed analytics</li>
-          <li class="flex gap-3">✔ Team collaboration</li>
-        </ul>
-    </div>
-
-      
-    <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
-        <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
-           Enterprise
-        </span>
-
-        <h3 class="text-4xl font-bold mb-2">$149 <span class="text-base font-normal">/month</span></h3>
-        <p class="text-gray-200 mb-6">For enterprises and agencies</p>
-
-        <button class="w-full py-3 mb-8 rounded-lg bg-white/20 hover:bg-white/30 transition">
-          Contact Sales
-        </button>
-
-        <ul class="space-y-4 text-sm">
-          <li class="flex gap-3">✔ Custom AI models</li>
-          <li class="flex gap-3">✔ Team access control</li>
-          <li class="flex gap-3">✔ Dedicated account manager</li>
-          <li class="flex gap-3">✔ Secure private API</li>
-          <li class="flex gap-3">✔ SLA uptime guarantee</li>
-          <li class="flex gap-3">✔ 24/7 premium support</li>
-        </ul>
-    </div>
-
-    </div>
-</section>
-
-        <div class="flex flex-col max-w-5xl px-4 mt-40 mx-auto items-center justify-center text-center py-16 rounded-xl glass">
-            <h2 class="text-2xl md:text-4xl font-medium mt-2">Ready to build?</h2>
-            <p class="mt-4 text-sm/7 max-w-md">See how fast you can turn your ideas into reality. Get started for free, no credit card required.</p>
-            <button class="btn glass flex items-center gap-2 mt-8">
-                Try now
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right size-4" aria-hidden="true">
-                    <path d="M5 12h14"></path>
-                    <path d="m12 5 7 7-7 7"></path>
-                </svg>
-            </button>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer class="flex flex-col items-center px-4 md:px-16 lg:px-24 justify-center w-full pt-16 mt-40 glass border-0">
-         <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-lg">g</div>
-        <spa class="text-xl font-bold">Genesis</spa>
-       </div>
-        <div class="flex flex-wrap items-center justify-center gap-8 py-8">
-            <a class="transition hover:text-gray-300" href="#terms-of-service">Terms of Service</a>
-            <a class="transition hover:text-gray-300" href="#privacy-policy">Privacy Policy</a>
-            <a class="transition hover:text-gray-300" href="#security">Security</a>
-            <a class="transition hover:text-gray-300" href="#sitemap">Sitemap</a>
+
+    <section class=" grid content-center mt-32 w-full max-w-2xl px-6 py-16 text-white">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold max-w-lg mx-auto mt-4 text-white">FAQ's</h2>
+        <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">Looking for answers to your frequently
+          asked questions? Check out our FAQ's section below to find.</p>
+      </div>
+
+      <div id="faq-container" class="mx-auto mt-12 space-y-4 w-full max-w-xl"></div>
+
+      <div class="space-y-4 content-center">
+
+
+        <div class="border border-white/30 rounded-xl overflow-hidden">
+          <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            Do I need coding or design experience to use PrebuiltUI?
+            <span id="icon-1">⌄</span>
+          </button>
+          <div id="faq-1" class="hidden px-6 pb-4 text-gray-200">
+            No, PrebuiltUI is designed for everyone. You can easily use
+            prebuilt components without any coding or design experience.
+          </div>
         </div>
-        <div class="flex items-center gap-6 pb-6">
-            <a href="#" class="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dribbble" aria-hidden="true">
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
-                    <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
-                    <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path>
-                </svg>
-            </a>
-            <a href="#" class="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin" aria-hidden="true">
-                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                    <rect width="4" height="12" x="2" y="9"></rect>
-                    <circle cx="4" cy="4" r="2"></circle>
-                </svg>
-            </a>
-            <a href="#" class="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter" aria-hidden="true">
-                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                </svg>
-            </a>
-            <a href="#" class="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github" aria-hidden="true">
-                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
-                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
-                </svg>
-            </a>
+
+
+        <div class="border border-white/30 rounded-xl overflow-hidden">
+          <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            What is PrebuiltUI and how does it help developers and designers?
+            <span id="icon-2">⌄</span>
+          </button>
+          <div id="faq-2" class="hidden px-6 pb-4 text-gray-200">
+            PrebuiltUI provides ready-made UI components that help developers
+            and designers build projects faster and more efficiently.
+          </div>
         </div>
-        <hr class="w-full border-white/20 mt-6" />
-        <div class="flex flex-col md:flex-row items-center w-full justify-between gap-4 py-4">
-            <p>Build Ai agents for free</p>
-            <p>Copyright © 2025 <a href="https://prebuiltui.com?utm_source=genesis" target="_blank">PrebuiltUI</a>. All rights reservered. Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a></p>
+
+
+        <div class="border border-white/30 rounded-xl overflow-hidden">
+          <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            Can I use PrebuiltUI components in my existing project?
+            <span id="icon-3">⌄</span>
+          </button>
+          <div id="faq-3" class="hidden px-6 pb-4 text-gray-200">
+            Yes, PrebuiltUI components can be easily integrated into
+            existing projects.
+          </div>
         </div>
-    </footer>
+
+
+        <div class="border border-white/30 rounded-xl overflow-hidden">
+          <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            How customizable are the generated components?
+            <span id="icon-4">⌄</span>
+          </button>
+          <div id="faq-4" class="hidden px-6 pb-4 text-gray-200">
+            All components are highly customizable using Tailwind CSS utility classes.
+          </div>
+        </div>
+
+
+        <div class="border border-white/30 rounded-xl overflow-hidden">
+          <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            Does PrebuiltUI support team collaboration?
+            <span id="icon-5">⌄</span>
+          </button>
+          <div id="faq-5" class="hidden px-6 pb-4 text-gray-200">
+            Yes, PrebuiltUI allows easy sharing and collaboration among teams.
+          </div>
+        </div>
+
+
+        <div class="border border-white/30 rounded-xl overflow-hidden">
+          <button class="w-full flex justify-between items-center px-6 py-4 text-left font-semibold">
+            Can I try PrebuiltUI before purchasing a plan?
+            <span id="icon-6">⌄</span>
+          </button>
+          <div id="faq-6" class="hidden px-6 pb-4 text-gray-200">
+            Yes, you can try PrebuiltUI for free before upgrading to a paid plan.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="mt-32">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold max-w-lg mx-auto mt-4 text-white">Our Pricing Plans</h2>
+        <p class="mt-4 text-center text-sm/7 text-gray-100 max-w-md mx-auto">A visual collection of our most recent
+          works - each piece crafted with intention, emotion and style.</p>
+      </div>
+      <div id="pricing-container" class="mt-12 flex flex-wrap items-center justify-center gap-6"></div>
+
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+
+        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
+          <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
+            Starter
+          </span>
+
+          <h3 class="text-4xl font-bold mb-2">$19 <span class="text-base font-normal">/month</span></h3>
+          <p class="text-gray-200 mb-6">For individuals and small teams</p>
+
+          <button class="w-full py-3 mb-8 rounded-lg bg-white/20 hover:bg-white/30 transition">
+            Get Started
+          </button>
+
+          <ul class="space-y-4 text-sm">
+            <li class="flex gap-3">✔ Up to 10 projects</li>
+            <li class="flex gap-3">✔ 10 AI tasks/month</li>
+            <li class="flex gap-3">✔ Basic text generation</li>
+            <li class="flex gap-3">✔ Simple chatbot access</li>
+            <li class="flex gap-3">✔ Email support only</li>
+            <li class="flex gap-3">✔ Community resources</li>
+          </ul>
+        </div>
+
+        <div class="backdrop-blur-xl bg-orange-500/90 text-white border border-white/30 rounded-2xl p-8 scale-105">
+
+          <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
+            Professional
+          </span>
+
+          <h3 class="text-4xl font-bold mb-2">$49 <span class="text-base font-normal">/month</span></h3>
+          <p class="text-gray-100 mb-6">For growing teams and startups</p>
+
+          <button class="w-full py-3 mb-8 rounded-lg bg-white text-black font-semibold hover:bg-gray-200 transition">
+            Upgrade Now
+          </button>
+
+          <ul class="space-y-4 text-sm">
+            <li class="flex gap-3">✔ Unlimited AI tasks</li>
+            <li class="flex gap-3">✔ API integration</li>
+            <li class="flex gap-3">✔ Text & image outputs</li>
+            <li class="flex gap-3">✔ Priority chat & email support</li>
+            <li class="flex gap-3">✔ Detailed analytics</li>
+            <li class="flex gap-3">✔ Team collaboration</li>
+          </ul>
+        </div>
+
+
+        <div class="backdrop-blur-xl bg-white/10 border border-white/20 rounded-2xl p-8">
+          <span class="inline-flex items-center gap-2 px-4 py-1 mb-6 rounded-full bg-white/20 text-sm">
+            Enterprise
+          </span>
+
+          <h3 class="text-4xl font-bold mb-2">$149 <span class="text-base font-normal">/month</span></h3>
+          <p class="text-gray-200 mb-6">For enterprises and agencies</p>
+
+          <button class="w-full py-3 mb-8 rounded-lg bg-white/20 hover:bg-white/30 transition">
+            Contact Sales
+          </button>
+
+          <ul class="space-y-4 text-sm">
+            <li class="flex gap-3">✔ Custom AI models</li>
+            <li class="flex gap-3">✔ Team access control</li>
+            <li class="flex gap-3">✔ Dedicated account manager</li>
+            <li class="flex gap-3">✔ Secure private API</li>
+            <li class="flex gap-3">✔ SLA uptime guarantee</li>
+            <li class="flex gap-3">✔ 24/7 premium support</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <div
+      class="flex flex-col max-w-5xl px-4 mt-40 mx-auto items-center justify-center text-center py-16 rounded-xl glass">
+      <h2 class="text-2xl md:text-4xl font-medium mt-2">Ready to build?</h2>
+      <p class="mt-4 text-sm/7 max-w-md">See how fast you can turn your ideas into reality. Get started for free, no
+        credit card required.</p>
+      <button class="btn glass flex items-center gap-2 mt-8">
+        Try now
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-arrow-right size-4" aria-hidden="true">
+          <path d="M5 12h14"></path>
+          <path d="m12 5 7 7-7 7"></path>
+        </svg>
+      </button>
+    </div>
+  </main>
+
+  <footer class="flex flex-col items-center px-4 md:px-16 lg:px-24 justify-center w-full pt-16 mt-40 glass border-0">
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-lg bg-orange-500 flex items-center justify-center font-bold text-white text-lg">g
+      </div>
+      <spa class="text-xl font-bold">Genesis</spa>
+    </div>
+    <div class="flex flex-wrap items-center justify-center gap-8 py-8">
+      <a class="transition hover:text-gray-300" href="#terms-of-service">Terms of Service</a>
+      <a class="transition hover:text-gray-300" href="#privacy-policy">Privacy Policy</a>
+      <a class="transition hover:text-gray-300" href="#security">Security</a>
+      <a class="transition hover:text-gray-300" href="#sitemap">Sitemap</a>
+    </div>
+    <div class="flex items-center gap-6 pb-6">
+      <a href="#" class="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-dribbble" aria-hidden="true">
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94"></path>
+          <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32"></path>
+          <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72"></path>
+        </svg>
+      </a>
+      <a href="#" class="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-linkedin" aria-hidden="true">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect width="4" height="12" x="2" y="9"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+      <a href="#" class="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-twitter" aria-hidden="true">
+          <path
+            d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+          </path>
+        </svg>
+      </a>
+      <a href="#" class="hover:-translate-y-0.5 text-gray-200 transition-all duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+          class="lucide lucide-github" aria-hidden="true">
+          <path
+            d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4">
+          </path>
+          <path d="M9 18c-4.51 2-5-2-7-2"></path>
+        </svg>
+      </a>
+    </div>
+    <hr class="w-full border-white/20 mt-6" />
+    <div class="flex flex-col md:flex-row items-center w-full justify-between gap-4 py-4">
+      <p>Build Ai agents for free</p>
+      <p>Copyright © 2025 PrebuiltUI. All rights reservered. Distributed by ThemeWagon</p>
+    </div>
+  </footer>
 </body>
+
 </html>
